@@ -1,44 +1,15 @@
 import Head from "next/head";
-import styled from "styled-components";
 import { Button } from "@taikai/rocket-kit";
 import { useWeb3 } from "../hooks/useWeb3";
 import { Container, Main, NavBar, BrandName, Menu , Footer, Title, SubTitle, Content}  from "../styles/home";
 import ConnectModal from "../components/connect-wallet-modal";
 import React, { useState } from 'react';
-import useAddress from "../hooks/useAddress";
-
-const AddressOpen = styled.div `
-    button {
-      border: 1px solid #ccc;
-      text-transform: none;
-    }
-`;
-
-type ActionType = () => void;
-
-interface OnActionClick {
-  onClick: ActionType;
-}
+import ClickableEthAddress  from "../components/clickable-eth-address";
 
 export default function Home() {
-  const { connected, disconnect, error } = useWeb3();
+
+  const { connected } = useWeb3();
   const [isConnectModal, setConnectModal] = useState(false);
-
-  const ShowEthAddress = (props: OnActionClick)=> {
-    const { address = "" } = useAddress();
-    const { onClick } = props;
-    return (
-      <AddressOpen>
-        <Button 
-          action={()=> onClick()}
-          color="grey100"
-          txtColor="black"
-          value={address && `${address.slice(0, 6)}...${address.slice(-4)}`} 
-          />      
-    </AddressOpen>
-    );
-  }
-
   return (
     <Container>
       <Head>
@@ -60,7 +31,7 @@ export default function Home() {
               action={()=> setConnectModal(true)}
             />
           )}
-          { connected && <ShowEthAddress onClick={()=> setConnectModal(true)}/>}
+          { connected && <ClickableEthAddress onClick={()=> setConnectModal(true)}/>}
         </Menu>
       </NavBar>
       {isConnectModal && <ConnectModal onClose={()=> setConnectModal(false)}/>}

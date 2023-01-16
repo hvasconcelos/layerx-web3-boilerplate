@@ -1,36 +1,21 @@
-
-
 import Head from "next/head";
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Button } from "@taikai/rocket-kit";
+import { useWeb3 } from "../hooks/useWeb3";
+import { Container, Main, NavBar, BrandName, Menu} from "../styles/home";
+import ConnectModal from "../components/connect-wallet-modal";
+import React, { useState } from 'react';
 
-const Container = styled.div `
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
-
-const Main = styled.div `
-  flex: 1;
-  padding: 15px;
-`;
-
-const NavBar = styled.div `
-  padding: 15px;
-  flex: initial;
-  border-bottom: 1px solid #EEE;
-  font-size: 1.2rem;    
-  font-weight: 600;
-`;
-
-const Footer = styled.div `
+const Footer = styled.div`
   flex: initial;
   padding: 10px;
   text-align: center;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #eee;
 `;
 
-
 export default function Home() {
+  const { connected, disconnect, error } = useWeb3();
+  const [isConnectModal, setConnectModal] = useState(false);
   return (
     <Container>
       <Head>
@@ -40,14 +25,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar>
-        Web3 Boilerplate
+        <BrandName> Web3 Boilerplate</BrandName>
+        <Menu>
+          {!connected && (
+            <Button
+              ariaLabel="Connect"
+              className="button"
+              color="green"
+              querySelector=".button"
+              value="Connect"
+              variant="solid"
+              action={()=> setConnectModal(true)}
+            />
+          )}
+        </Menu>
       </NavBar>
+      {isConnectModal && <ConnectModal onClose={()=> setConnectModal(false)}/>}
       <Main>
         <h2>Hello World</h2>
       </Main>
-      <Footer>
-        Made with ❤️ by Layerx - 2023
-      </Footer>
+      <Footer>Made with ❤️ by Layerx - 2023</Footer>
     </Container>
-  )
+  );
 }

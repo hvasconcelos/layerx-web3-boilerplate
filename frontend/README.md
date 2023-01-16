@@ -6,6 +6,21 @@
 * LayerX RocketKit - UI kit 
 * LayerX Dappkit - Web3 Framework
 
+## Features 
+
+- Styled Components Setup to style components and customize Rocket Kit
+- UI Framework 
+- Automatic EVM Switch 
+- Metamask Onboarding 
+- Basic Ethersum React Hooks (useBalance, useAddress, useETHBalance, ...)
+- useWeb3 Hook to easily connect and disconnect from wallets
+- Hooks-first approach to fetching and caching data from Contracts and memoization for performance with SWR
+
+
+## Previous Art 
+
+* [mirshko/next-web3-boilerplate](https://github.com/mirshko/next-web3-boilerplate)
+
 ## Getting Started
 
 First, run the development server:
@@ -22,11 +37,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Features 
+## Learn More
+To learn more about Next.js, take a look at the following resources:
 
-- Styled Components Setup
-- UI Framework 
-- Automatic EVM Switch 
-- Metamask Onboarding 
-- Basic Ethersum React Hooks (useBalance, useAddress, useETHBalance, ...)
-- Dappkit Context Setup
+Next.js Documentation - learn about Next.js features and API.
+Learn Next.js - an interactive Next.js tutorial.
+You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
+
+Check out our Next.js deployment documentation for more details.

@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@metamask/detect-provider": "^2.0.0",
@@ -32,6 +34,7 @@
     "@types/styled-components": "^5.1.26",
     "eslint": "^8.31.0",
     "ethers": "^5.7.2",
+    "prettier": "^2.8.3",
     "typechain": "^8.1.1"
   }
 }

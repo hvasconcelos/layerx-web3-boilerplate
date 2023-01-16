@@ -29,6 +29,15 @@ export const Warning = styled.div`
   font-size: 1.2rem;
 `;
 
+export const Alert = styled.div `
+margin-bottom: 20px;
+color: red;
+font-size: 1.2rem;
+font-weight: 300;
+width: 100%;
+margin-top: 20px;
+`;
+
 export const Agreement = styled.div`
   margin-top: 15px;
   color: #777;

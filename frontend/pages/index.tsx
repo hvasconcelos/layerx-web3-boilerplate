@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar>
-        <BrandName> Web3 Boilerplate </BrandName>
+        <BrandName>LayerX Web3 Boilerplate </BrandName>
         <Menu>
           {!connected && (
             <Button
@@ -31,14 +31,14 @@ export default function Home() {
               action={()=> setConnectModal(true)}
             />
           )}
-          { connected && <ClickableEthAddress onClick={()=> setConnectModal(true)}/>}
+          {connected && <ClickableEthAddress onClick={()=> setConnectModal(true)}/>}
         </Menu>
       </NavBar>
       {isConnectModal && <ConnectModal onClose={()=> setConnectModal(false)}/>}
       <Main>
         <Content>
           <Title>Lay3rX Web3 Boilerplate</Title>
-          <SubTitle>Your web3 React.js template built with <strong>Dappkit</strong> +  <strong>RocketKit</strong></SubTitle>
+          <SubTitle>Your web3 React.js template project built with <strong>Dappkit</strong> +  <strong>RocketKit</strong></SubTitle>
         </Content>        
       </Main>
       <Footer>Made with ❤️ by LayerX - 2023</Footer>

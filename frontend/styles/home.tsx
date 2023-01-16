@@ -13,23 +13,26 @@ export const Main = styled.div`
 
 export const NavBar = styled.div`
   padding: 15px;
-  flex: initial;
   margin-left: 10px;
   border-bottom: 1px solid #eee;
   font-size: 1.2rem;
   font-weight: 600;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const BrandName = styled.div`
-  flex: initial;
-  position: relative;
-  top: 4px;
+    font-size: 1.4rem;
 `;
 
 export const Menu = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
 `;
 
+
+export const Footer = styled.div`
+  flex: initial;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #eee;
+`;

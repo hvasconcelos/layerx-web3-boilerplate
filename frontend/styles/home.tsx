@@ -33,6 +33,29 @@ export const Menu = styled.div`
 export const Footer = styled.div`
   flex: initial;
   padding: 10px;
+  font-size: 1.2rem;
+  color: #888;
   text-align: center;
   border-top: 1px solid #eee;
+`;
+
+
+export const Title = styled.h4`
+  display: block;
+  font-size: 4.4rem;
+  margin: 0px;
+`;
+export const SubTitle = styled.p`
+  display: block;
+  font-size: 1.8rem;
+  color: #888;
+`;
+export const Content = styled.div`
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

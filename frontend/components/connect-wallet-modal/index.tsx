@@ -83,7 +83,7 @@ const ConnectWalletModal: React.FC<Props> = (props: Props) => {
         </>
       )}
       <ModalFooter
-        closeValue={connected ? "Close" : "Cancel"}
+        closeValue={"Close"}
         closeAction={() => onClose()}
       >
         {connected && (

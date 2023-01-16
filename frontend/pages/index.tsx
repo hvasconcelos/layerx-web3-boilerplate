@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar>
-        <BrandName>LayerX Web3 Boilerplate </BrandName>
+        <BrandName>LayerX Web3 Boilerplate</BrandName>
         <Menu>
           {!connected && (
             <Button
@@ -37,11 +37,14 @@ export default function Home() {
       {isConnectModal && <ConnectModal onClose={()=> setConnectModal(false)}/>}
       <Main>
         <Content>
-          <Title>Lay3rX Web3 Boilerplate</Title>
-          <SubTitle>Your web3 React.js template project built with <strong>Dappkit</strong> +  <strong>RocketKit</strong></SubTitle>
+          <Title>LayerX Web3 Boilerplate</Title>
+          <SubTitle>Web3 Next.js boilerplate project based on 
+            &nbsp;<strong style={{color: "#222", textStyle: 'italic'}}>Dappkit</strong>™ + 
+            <strong style={{color: "#222"}}>RocketKit</strong>™&nbsp;  🙌
+          </SubTitle>
         </Content>        
       </Main>
-      <Footer>Made with ❤️ by LayerX - 2023</Footer>
+      <Footer>Made with ❤️ by <strong>LayerX</strong> - 2023</Footer>
     </Container>
   );
 }

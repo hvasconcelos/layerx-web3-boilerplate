@@ -34,7 +34,7 @@ export const Footer = styled.div`
   flex: initial;
   padding: 10px;
   font-size: 1.2rem;
-  color: #888;
+  color: #222;
   text-align: center;
   border-top: 1px solid #eee;
 `;

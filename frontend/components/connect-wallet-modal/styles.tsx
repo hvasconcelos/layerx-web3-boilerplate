@@ -7,11 +7,13 @@ export const ConnectorList = styled.div`
 
 export const Connector = styled.div`
   display: flex;
-  border: 1px solid #aaa;
-  padding: 15px 10px;
+  border: 1px solid #BBB;
+  padding: 15px 15px;
   cursor: pointer;
+  border-radius: 5px;
   &:hover {
-    background: #ddd;
+    background: #eee;
+    border: 1px solid #ddd;
   }
   span {
     margin-left: 15px;
@@ -53,4 +55,5 @@ export const AddressStyle = styled.div`
   color: #333;
   font-size: 1.2rem;
   border-radius: 10px;
+  box-shadow: inset 0 0 1px 1px #EEE;
 `;

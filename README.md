@@ -3,12 +3,10 @@
 This boilerplate project uses Nextjs + Dappkit + Rocket Kit. 
 
 -  [Contracts](./contracts/README.md) - An Hardhat Project for your smart contracts
--  [Interface](./frontend/README.md) -  A Next.js project withe a Dappkit Context built-in 
-
-
+-  [Interface](./frontend/README.md) - A Next.js project with a Dappkit Context built-in 
 
 ## Rocket Kit 
-Rocket Kit is an open source UI Design System used by LayerX products
+Rocket Kit is an React.js open source UI Design System used by LayerX products
 
 * [Story Book](https://main--600c295ccb36300021e7d82f.chromatic.com/)
 * [Chromatic Library](https://www.chromatic.com/library?appId=600c295ccb36300021e7d82f&branch=main)
@@ -45,4 +43,4 @@ Interact with your smart contract on your dapp by generating a typescript/javasc
 
 -----
 
-Made with ❤️ by (LayerX)[https://layerx.xyz] 2023
+Made with ❤️ by [LayerX](https://layerx.xyz) 2023

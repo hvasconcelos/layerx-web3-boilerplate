@@ -15,7 +15,7 @@ Rocket Kit is an open source UI Design System used by LayerX products
 * [Source Code](https://github.com/taikai/rocket-kit)
 * [NPM](https://www.npmjs.com/package/@taikai/rocket-kit)
 
-### Dappkit 
+## Dappkit 
 
 dappKit is a powerful SDK that allows you to develop beautiful web3 apps in a matter of minutes. We mean it.
 
@@ -33,6 +33,8 @@ Integrates easily with Metamask to sign and submit smart contract transactions i
 
 ### Generate a wrapper for your EVM contract
 Interact with your smart contract on your dapp by generating a typescript/javascript wrapper using [Dappkit LaunchPad](https://github.com/taikai/dappkit-launchpad)
+
+### Important Links
 
 * [Website](https://dappkit.dev/)
 * [Documentation](https://docs.dappkit.dev/start-building)
